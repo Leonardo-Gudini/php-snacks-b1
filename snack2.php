@@ -8,14 +8,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>verifica accesso</title>
 </head>
 <body>
-
-<h1>verifica Accesso</h1>
-
-<h3></h3>
-
 
 <?php
 
@@ -26,11 +21,18 @@
     $accesso = "";
 
     if (strlen($name) > 3 && is_numeric($age) == true && strpos($email, "@") != false){
-        echo $accesso = "Accesso riuscito";
+        $accesso = "Accesso riuscito";
     } else {
-        echo $accesso =  "Accesso negato";
+        $accesso =  "Accesso negato";
     }
 ?>
+
+<h1>verifica Accesso</h1>
+
+<h3><?php echo $accesso ?></h3>
+
+
+
     
 </body>
 </html>
